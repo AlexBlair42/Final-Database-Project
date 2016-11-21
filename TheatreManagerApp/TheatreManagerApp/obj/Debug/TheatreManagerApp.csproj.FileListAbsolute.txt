@@ -1,3 +1,7 @@
 C:\Users\Andrew Gazeley\Desktop\School 2017\CS320 QA\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
 C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
 C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
+C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.csprojResolveAssemblyReference.cache
+C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.AppWindow.resources
+C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.Properties.Resources.resources
+C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.csproj.GenerateResource.Cache

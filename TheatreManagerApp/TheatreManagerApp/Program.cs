@@ -10,6 +10,7 @@ namespace TheatreManagerApp
 {
     static class Program
     {
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -28,7 +29,7 @@ namespace TheatreManagerApp
             {
 
                 OleDbConnection MyConnection;
-                string ConnectionPath = "Provider=sqloledb;Data Source=cs1;Initial Catalog=Northwind;Integrated Security=SSPI;";
+                string ConnectionPath = "Data Source=CS1;Initial Catalog=TheaterDB;Integrated Security=True;";
                 MyConnection = new OleDbConnection(ConnectionPath);
                 MyConnection.Open();
                 OleDbDataAdapter myAdapter = new OleDbDataAdapter(Query, MyConnection);
@@ -46,8 +47,6 @@ namespace TheatreManagerApp
 
         static DataTable FilterTable(DataTable table, DateTime Start, DateTime End)
         {
-
-
             return table;
         }
 

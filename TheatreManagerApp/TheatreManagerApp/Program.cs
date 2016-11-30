@@ -20,6 +20,11 @@ namespace TheatreManagerApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new AppWindow());
+
+               // Are we sure we want the three panel approach? We could just have a main menu?
+               // Also which way do we wish to display the scheduling UI?
+                
+
         }
 
         static DataTable QueryDB(string Query)

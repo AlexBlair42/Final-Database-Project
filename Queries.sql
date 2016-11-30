@@ -4,22 +4,22 @@
 -------------
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR AFTER A SPCIFIC DATE--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date > {0};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR BEFORE A SPCIFIC DATE--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date < {0};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR ON A SPCIFIC DATE--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date = {0};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR FROM {0} to {1}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date >= {0} AND C.DATE <= {1};
 
 -----------------
@@ -27,62 +27,62 @@ WHERE C.Date >= {0} AND C.DATE <= {1};
 -----------------
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR AFTER A SPCIFIC DATE{0} AFTER A SPECIFIC TIME{1}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date > {0} AND S.TIME > {1};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR BEFORE A SPCIFIC DATE{0} AFTER A SPECIFIC TIME{1}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date < {0} AND S.Time > {1};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR ON A SPCIFIC DATE{0} AFTER A SPECIFIC TIME{1}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date = {0} AND S.Time > {1};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR FROM {0} to {1} AFTER A SPECIFIC TIME {2}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date >= {0} AND C.DATE <= {1} AND S.Time > {1};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR AFTER A SPCIFIC DATE{0} BEFORE A SPECIFIC TIME{1}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date > {0} AND S.TIME < {1};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR BEFORE A SPCIFIC DATE{0} BEFORE A SPECIFIC TIME{1}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date < {0} AND S.Time < {1};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR ON A SPCIFIC DATE{0} BEFORE A SPECIFIC TIME{1}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date = {0} AND S.Time < {1};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR FROM {0} to {1} BEFORE A SPECIFIC TIME {2}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date >= {0} AND C.DATE <= {1} AND S.Time < {2};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR AFTER A SPCIFIC DATE{0} AT A SPECIFIC TIME{1}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date > {0} AND S.TIME = {1};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR BEFORE A SPCIFIC DATE{0} AT A SPECIFIC TIME{1}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date < {0} AND S.Time = {1};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR ON A SPCIFIC DATE{0} AT A SPECIFIC TIME{1}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date = {0} AND S.Time = {1};
 
 --PULLS MOVIE INFO AND TIME(CAN INCLUDE THEATER IN LATER QUERY) FOR FROM {0} to {1} AT A SPECIFIC TIME {2}--
 SELECT *
-FROM Schedule S LEFT OUTER JOIN Calendar C ON S.ScheduleID = C.Calendar ID LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
+FROM Schedule S LEFT OUTER JOIN Calendar C ON S.Schedule_Id = C.Cal_Id LEFT OUT JOIN Movie M ON S.movie_id = M.movie_id
 WHERE C.Date >= {0} AND C.DATE <= {1} AND S.Time = {2};
 
 ----------------------
@@ -90,17 +90,38 @@ WHERE C.Date >= {0} AND C.DATE <= {1} AND S.Time = {2};
 ----------------------
 --PRICE OF A KID--
 SELECT BO.price_kid
-FROM BoxOffice BO;
+FROM Box_Office BO;
 
 --PRICE OF ADULT--
 SELECT BO.price_adult
-FROM BoxOffice BO;
+FROM Box_Office BO;
 
 --PRICE OF MATINEE--
 SELECT BO.price_matinee
-FROM BoxOffice BO;
+FROM Box_Office BO;
 
 --PRICE OF DISCOUNTED--
-Select BO.price_senior_student
-FROM BoxOffice BO;
+Select BO.price_student_senior
+FROM Box_Office BO;
+
+
+---------------------
+--INVENTORY QUERIES--
+---------------------
+
+-- PRODUCT NAME AND QUANITY  --
+SELECT M.Prod_Name, M.Quantity
+FROM Menu M
+
+-- PRODUCT NAME AND PRICE--
+SELECT M.Prod_Name, M.Price
+FROM Menu M
+
+-- PRODCUT NAME --
+SELECT M.Prod_Name
+From Menu M
+
+-- PRICE --
+Select M.Price
+FROM Menu M
 

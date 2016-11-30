@@ -1,0 +1,29 @@
+C:\Users\Andrew Gazeley\Desktop\School 2017\CS320 QA\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
+C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
+C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
+C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.csprojResolveAssemblyReference.cache
+C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.AppWindow.resources
+C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.Properties.Resources.resources
+C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.csproj.GenerateResource.Cache
+C:\Users\agazeley18\Source\Repos\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
+B:\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
+C:\Users\Alex\Documents\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
+C:\Users\Alex\Documents\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe
+C:\Users\Alex\Documents\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.pdb
+C:\Users\Alex\Documents\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.AppWindow.resources
+C:\Users\Alex\Documents\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.Properties.Resources.resources
+C:\Users\Alex\Documents\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.csproj.GenerateResource.Cache
+C:\Users\Alex\Documents\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.exe
+C:\Users\Alex\Documents\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.pdb
+C:\Users\Alex\Documents\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.Schedule.resources
+C:\Users\agazeley18\Desktop\Final-Database-Project-master\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
+C:\Users\agazeley18\Desktop\Final-Database-Project-master\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe
+C:\Users\agazeley18\Desktop\Final-Database-Project-master\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.pdb
+C:\Users\agazeley18\Desktop\Final-Database-Project-master\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.csprojResolveAssemblyReference.cache
+C:\Users\agazeley18\Desktop\Final-Database-Project-master\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.AppWindow.resources
+C:\Users\agazeley18\Desktop\Final-Database-Project-master\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.Properties.Resources.resources
+C:\Users\agazeley18\Desktop\Final-Database-Project-master\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.Schedule.resources
+C:\Users\agazeley18\Desktop\Final-Database-Project-master\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.csproj.GenerateResource.Cache
+C:\Users\agazeley18\Desktop\Final-Database-Project-master\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.exe
+C:\Users\agazeley18\Desktop\Final-Database-Project-master\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.pdb

@@ -14,10 +14,13 @@ namespace TheatreManagerApp
     {
         Panel Active_panel;
         DataTable Schedule;
+        int Querynum = 0;
         public AppWindow()
         {
+            
             InitializeComponent();
             Active_panel = this.Menu_panel;
+            
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -41,7 +44,8 @@ namespace TheatreManagerApp
 
         private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
         {
-
+            
         }
+
     }
 }

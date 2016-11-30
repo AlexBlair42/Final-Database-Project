@@ -6,3 +6,4 @@ C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreMana
 C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.Properties.Resources.resources
 C:\Users\Andrew Gazeley\Desktop\School 2017\CS374-DBMS\Final_project\TheatreManagerApp\TheatreManagerApp\obj\Debug\TheatreManagerApp.csproj.GenerateResource.Cache
 C:\Users\agazeley18\Source\Repos\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
+B:\GitHub\Final-Database-Project\TheatreManagerApp\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config

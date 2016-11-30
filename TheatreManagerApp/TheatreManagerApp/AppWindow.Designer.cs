@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
                this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-               this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-               this.textBox1 = new System.Windows.Forms.TextBox();
                this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-               this.label1 = new System.Windows.Forms.Label();
+               this.Concessions = new System.Windows.Forms.Label();
                this.pictureBox1 = new System.Windows.Forms.PictureBox();
                this.button1 = new System.Windows.Forms.Button();
                this.button2 = new System.Windows.Forms.Button();
+               this.label1 = new System.Windows.Forms.Label();
                ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
                this.splitContainer1.Panel1.SuspendLayout();
                this.splitContainer1.Panel2.SuspendLayout();
@@ -56,10 +55,9 @@
                // splitContainer1.Panel1
                // 
                this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Maroon;
+               this.splitContainer1.Panel1.Controls.Add(this.label1);
                this.splitContainer1.Panel1.Controls.Add(this.button2);
                this.splitContainer1.Panel1.Controls.Add(this.button1);
-               this.splitContainer1.Panel1.Controls.Add(this.monthCalendar1);
-               this.splitContainer1.Panel1.Controls.Add(this.textBox1);
                this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
                // 
                // splitContainer1.Panel2
@@ -69,28 +67,6 @@
                this.splitContainer1.SplitterDistance = 403;
                this.splitContainer1.SplitterWidth = 6;
                this.splitContainer1.TabIndex = 2;
-               // 
-               // monthCalendar1
-               // 
-               this.monthCalendar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-               this.monthCalendar1.Location = new System.Drawing.Point(26, 142);
-               this.monthCalendar1.Margin = new System.Windows.Forms.Padding(17, 17, 17, 17);
-               this.monthCalendar1.Name = "monthCalendar1";
-               this.monthCalendar1.TabIndex = 2;
-               this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
-               // 
-               // textBox1
-               // 
-               this.textBox1.BackColor = System.Drawing.Color.Silver;
-               this.textBox1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.textBox1.Location = new System.Drawing.Point(53, 41);
-               this.textBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-               this.textBox1.Name = "textBox1";
-               this.textBox1.Size = new System.Drawing.Size(297, 52);
-               this.textBox1.TabIndex = 1;
-               this.textBox1.Text = "Movie Schedule";
-               this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-               this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
                // 
                // splitContainer2
                // 
@@ -105,7 +81,8 @@
                // 
                // splitContainer2.Panel2
                // 
-               this.splitContainer2.Panel2.Controls.Add(this.label1);
+               this.splitContainer2.Panel2.BackColor = System.Drawing.Color.Maroon;
+               this.splitContainer2.Panel2.Controls.Add(this.Concessions);
                this.splitContainer2.Panel2.Controls.Add(this.pictureBox1);
                this.splitContainer2.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
                this.splitContainer2.Size = new System.Drawing.Size(805, 980);
@@ -113,19 +90,22 @@
                this.splitContainer2.SplitterWidth = 6;
                this.splitContainer2.TabIndex = 0;
                // 
-               // label1
+               // Concessions
                // 
-               this.label1.AutoSize = true;
-               this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-               this.label1.Location = new System.Drawing.Point(15, 13);
-               this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-               this.label1.Name = "label1";
-               this.label1.Size = new System.Drawing.Size(132, 48);
-               this.label1.TabIndex = 1;
-               this.label1.Text = "label1";
+               this.Concessions.AutoSize = true;
+               this.Concessions.BackColor = System.Drawing.Color.Silver;
+               this.Concessions.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+               this.Concessions.Location = new System.Drawing.Point(15, 13);
+               this.Concessions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+               this.Concessions.Name = "Concessions";
+               this.Concessions.Size = new System.Drawing.Size(259, 48);
+               this.Concessions.TabIndex = 1;
+               this.Concessions.Text = "Concessions";
+               this.Concessions.Click += new System.EventHandler(this.label1_Click);
                // 
                // pictureBox1
                // 
+               this.pictureBox1.BackColor = System.Drawing.Color.White;
                this.pictureBox1.Location = new System.Drawing.Point(24, 87);
                this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
                this.pictureBox1.Name = "pictureBox1";
@@ -157,6 +137,18 @@
                this.button2.UseVisualStyleBackColor = false;
                this.button2.Click += new System.EventHandler(this.button2_Click);
                // 
+               // label1
+               // 
+               this.label1.AutoSize = true;
+               this.label1.BackColor = System.Drawing.Color.Silver;
+               this.label1.Font = new System.Drawing.Font("Verdana", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.label1.Location = new System.Drawing.Point(18, 28);
+               this.label1.Name = "label1";
+               this.label1.Size = new System.Drawing.Size(351, 46);
+               this.label1.TabIndex = 5;
+               this.label1.Text = "Movie Schedule";
+               this.label1.Click += new System.EventHandler(this.label1_Click_1);
+               // 
                // AppWindow
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -185,11 +177,10 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-          private System.Windows.Forms.TextBox textBox1;
-          private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Label Concessions;
           private System.Windows.Forms.Button button1;
           private System.Windows.Forms.Button button2;
+          private System.Windows.Forms.Label label1;
      }
 }
 

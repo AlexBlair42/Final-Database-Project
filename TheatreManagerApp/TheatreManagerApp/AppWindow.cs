@@ -50,20 +50,32 @@ namespace TheatreManagerApp
 
           private void textBox1_TextChanged(object sender, EventArgs e)
           {
-
+              
           }
 
           private void button1_Click_1(object sender, EventArgs e)
           {
-
+               Schedule S1 = new Schedule();
+               S1.ShowDialog();
           }
 
           private void button2_Click(object sender, EventArgs e)
           {
-
+               Schedule S2 = new Schedule();
+                    S2.ShowDialog();
           }
 
           private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+          {
+
+          }
+
+          private void label1_Click(object sender, EventArgs e)
+          {
+
+          }
+
+          private void label1_Click_1(object sender, EventArgs e)
           {
 
           }

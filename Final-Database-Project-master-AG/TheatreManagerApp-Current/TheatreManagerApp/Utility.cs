@@ -24,7 +24,7 @@ namespace TheatreManagerApp
         }
         internal static OleDbConnection GetOleDBConnection()
         {
-            string ConnectionPath = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = CS1; Initial Catalog = TheaterDB; Integrated Security = True;";
+            string ConnectionPath = "Provider=sqloledb; Data Source = CS1; Initial Catalog = TheaterDB; Integrated Security = SSPI;";
             OleDbConnection MyConnection = new OleDbConnection(ConnectionPath);
             return MyConnection;
         }

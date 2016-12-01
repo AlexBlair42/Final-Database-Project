@@ -47,21 +47,22 @@ namespace TheatreManagerApp
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Inventory_panel = new System.Windows.Forms.Panel();
-            this.Menu_toolstrip = new System.Windows.Forms.ToolStrip();
-            this.Menu_toolstrip2 = new ToolStrip();
+            this.Menu_toolstrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.Menu_toolstrip = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.Menu_panel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.Price_panel.SuspendLayout();
-            this.Menu_toolstrip.SuspendLayout();
+            this.Inventory_panel.SuspendLayout();
             this.Menu_toolstrip2.SuspendLayout();
+            this.Menu_toolstrip.SuspendLayout();
             this.Menu_panel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -227,13 +228,42 @@ namespace TheatreManagerApp
             // 
             // Inventory_panel
             // 
+            this.Inventory_panel.BackColor = System.Drawing.Color.Coral;
             this.Inventory_panel.Controls.Add(this.Menu_toolstrip2);
             this.Inventory_panel.Location = new System.Drawing.Point(-1, 180);
             this.Inventory_panel.Name = "Inventory_panel";
             this.Inventory_panel.Size = new System.Drawing.Size(360, 496);
             this.Inventory_panel.TabIndex = 1;
             this.Inventory_panel.Visible = false;
-            this.Inventory_panel.BackColor = System.Drawing.Color.Coral;
+            // 
+            // Menu_toolstrip2
+            // 
+            this.Menu_toolstrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Menu_toolstrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel2,
+            this.toolStripButton2});
+            this.Menu_toolstrip2.Location = new System.Drawing.Point(0, 0);
+            this.Menu_toolstrip2.Name = "Menu_toolstrip2";
+            this.Menu_toolstrip2.Size = new System.Drawing.Size(360, 27);
+            this.Menu_toolstrip2.TabIndex = 0;
+            this.Menu_toolstrip2.Text = "toolStrip1";
+            this.Menu_toolstrip2.Visible = false;
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(86, 24);
+            this.toolStripLabel2.Text = "toolStripLabel1";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton2.Text = "toolStripButton1";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // Menu_toolstrip
             // 
@@ -261,35 +291,7 @@ namespace TheatreManagerApp
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);// 
-            // Menu_toolstrip2
-            // 
-            this.Menu_toolstrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.Menu_toolstrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel2,
-            this.toolStripButton2});
-            this.Menu_toolstrip2.Location = new System.Drawing.Point(0, 0);
-            this.Menu_toolstrip2.Name = "Menu_toolstrip";
-            this.Menu_toolstrip2.Size = new System.Drawing.Size(360, 27);
-            this.Menu_toolstrip2.TabIndex = 0;
-            this.Menu_toolstrip2.Text = "toolStrip1";
-            this.Menu_toolstrip2.Visible = false;
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Name = "toolStripLabel1";
-            this.toolStripLabel2.Size = new System.Drawing.Size(86, 24);
-            this.toolStripLabel2.Text = "toolStripLabel1";
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton1";
-            this.toolStripButton2.Size = new System.Drawing.Size(24, 24);
-            this.toolStripButton2.Text = "toolStripButton1";
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // Menu_panel
             // 
@@ -298,7 +300,6 @@ namespace TheatreManagerApp
             this.Menu_panel.Name = "Menu_panel";
             this.Menu_panel.Size = new System.Drawing.Size(360, 496);
             this.Menu_panel.TabIndex = 1;
-            this.Menu_panel.Visible = true;
             // 
             // panel1
             // 
@@ -309,6 +310,13 @@ namespace TheatreManagerApp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(360, 676);
             this.panel1.TabIndex = 2;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(23, 45);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 15;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // dataGridView1
             // 
@@ -330,21 +338,19 @@ namespace TheatreManagerApp
             this.label10.Text = "Calendar";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(23, 45);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 15;
-            // 
             // AppWindow
             // 
             this.ClientSize = new System.Drawing.Size(1062, 673);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Menu_panel);
             this.Controls.Add(this.Price_panel);
-            this.Name = "Theater Application";
+            this.Name = "AppWindow";
             this.Price_panel.ResumeLayout(false);
             this.Price_panel.PerformLayout();
+            this.Inventory_panel.ResumeLayout(false);
+            this.Inventory_panel.PerformLayout();
+            this.Menu_toolstrip2.ResumeLayout(false);
+            this.Menu_toolstrip2.PerformLayout();
             this.Menu_toolstrip.ResumeLayout(false);
             this.Menu_toolstrip.PerformLayout();
             this.Menu_panel.ResumeLayout(false);

@@ -65,7 +65,14 @@ namespace TheatreManagerApp
 
         }
 
-       
+          private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+          {
 
-    }
+          }
+
+          private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+          {
+
+          }
+     }
 }

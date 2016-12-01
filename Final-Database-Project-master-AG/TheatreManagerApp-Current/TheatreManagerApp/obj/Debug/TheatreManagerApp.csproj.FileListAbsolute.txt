@@ -34,3 +34,4 @@ C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-mast
 C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\obj\Debug\TheatreManagerApp.AppWindow.resources
 C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\obj\Debug\TheatreManagerApp.Properties.Resources.resources
 C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\obj\Debug\TheatreManagerApp.csproj.GenerateResource.Cache
+C:\Users\ablair18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-Current\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config

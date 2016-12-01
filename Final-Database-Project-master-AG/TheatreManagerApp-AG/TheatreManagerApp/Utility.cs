@@ -22,27 +22,29 @@ namespace TheatreManagerApp
 
             return returnValue;
         }
-        internal static DataTable QueryDB(String Query)
+        internal static OleDbConnection GetOleDBConnection()
         {
-            DataTable QueryResults = new DataTable();
-            try
-            {
-
-                OleDbConnection MyConnection;
-                string ConnectionPath = "Data Source = CS1; Initial Catalog = TheaterDB; Integrated Security = True;";
-                MyConnection = new OleDbConnection(ConnectionPath);
+            OleDbConnection MyConnection;
+            string ConnectionPath = "Data Source = CS1; Initial Catalog = TheaterDB; Integrated Security = True;";
+            MyConnection = new OleDbConnection(ConnectionPath);
+            return MyConnection;
+        }
+        internal static OleDbCommand GetOleDBCmdforQuery(String Query,OleDbConnection MyConnection)
+        {
+            
+            OleDbCommand cmd = new OleDbCommand();
+            try {
                 MyConnection.Open();
-                OleDbDataAdapter myAdapter = new OleDbDataAdapter(Query, MyConnection);
-
-                myAdapter.Fill(QueryResults);
+                cmd.Connection = MyConnection;
+                cmd.CommandText = Query;
 
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Oops, error: " + ex.Message + ex.StackTrace);
             }
-
-            return QueryResults;
+            return cmd;
+            
         }
         internal static string QuerySelect(int QueryNum)
         {

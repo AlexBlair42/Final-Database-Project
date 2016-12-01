@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TheatreManagerApp;
+using System.Data.OleDb;
 
 namespace TheatreManagerApp
 {
@@ -27,11 +29,29 @@ namespace TheatreManagerApp
         private void LoadLeftPanel()
         {
             string kids_price, adult_price, SS_price, matinee_price;
-            Prices = TheatreManagerApp.Utility.QueryDB(TheatreManagerApp.Utility.QuerySelect(0));
-            DataTableReader rdr = Prices.CreateDataReader();
-            rdr.Read();
-            kids_price = rdr[1].ToString();
-            this.label6.Text = kids_price;
+            try
+            {
+                OleDbConnection connection = Utility.GetOleDBConnection();
+                connection.Open();
+                string Query = Utility.QuerySelect(0);
+                OleDbCommand cmd = new OleDbCommand(Query, connection);
+                OleDbDataReader rdr = cmd.ExecuteReader();
+
+
+                bool success = rdr.Read();
+                if (success)
+                {
+                    label6.Text = rdr.GetValue(1).ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Oops, error: " + ex.Message + ex.StackTrace);
+            }
+            
+            
+
+            
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)

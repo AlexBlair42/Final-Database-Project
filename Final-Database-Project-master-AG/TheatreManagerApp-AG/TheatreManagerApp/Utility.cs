@@ -24,27 +24,9 @@ namespace TheatreManagerApp
         }
         internal static OleDbConnection GetOleDBConnection()
         {
-            OleDbConnection MyConnection;
-            string ConnectionPath = "Data Source = CS1; Initial Catalog = TheaterDB; Integrated Security = True;";
-            MyConnection = new OleDbConnection(ConnectionPath);
+            string ConnectionPath = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = CS1; Initial Catalog = TheaterDB; Integrated Security = True;";
+            OleDbConnection MyConnection = new OleDbConnection(ConnectionPath);
             return MyConnection;
-        }
-        internal static OleDbCommand GetOleDBCmdforQuery(String Query,OleDbConnection MyConnection)
-        {
-            
-            OleDbCommand cmd = new OleDbCommand();
-            try {
-                MyConnection.Open();
-                cmd.Connection = MyConnection;
-                cmd.CommandText = Query;
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Oops, error: " + ex.Message + ex.StackTrace);
-            }
-            return cmd;
-            
         }
         internal static string QuerySelect(int QueryNum)
         {

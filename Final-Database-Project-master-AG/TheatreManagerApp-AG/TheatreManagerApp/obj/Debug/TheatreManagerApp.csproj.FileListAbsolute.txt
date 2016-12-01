@@ -28,3 +28,9 @@ C:\Users\agazeley18\Desktop\Final-Database-Project-master\TheatreManagerApp-AG\T
 C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe.config
 C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\obj\Debug\TheatreManagerApp.exe
 C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\obj\Debug\TheatreManagerApp.pdb
+C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\bin\Debug\TheatreManagerApp.exe
+C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\bin\Debug\TheatreManagerApp.pdb
+C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\obj\Debug\TheatreManagerApp.csprojResolveAssemblyReference.cache
+C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\obj\Debug\TheatreManagerApp.AppWindow.resources
+C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\obj\Debug\TheatreManagerApp.Properties.Resources.resources
+C:\Users\agazeley18\Documents\Final-Database-Project\Final-Database-Project-master-AG\TheatreManagerApp-AG\TheatreManagerApp\obj\Debug\TheatreManagerApp.csproj.GenerateResource.Cache

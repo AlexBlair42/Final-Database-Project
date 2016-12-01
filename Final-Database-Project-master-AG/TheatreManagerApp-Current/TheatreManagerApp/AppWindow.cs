@@ -46,7 +46,7 @@ namespace TheatreManagerApp
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Oops, error: " + ex.Message + ex.StackTrace);
+                MessageBox.Show("Oops, error: " + ex.Message + ex.StackTrace);
             }
             
             
@@ -65,6 +65,7 @@ namespace TheatreManagerApp
 
         }
 
+<<<<<<< HEAD
           private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
           {
 
@@ -75,4 +76,11 @@ namespace TheatreManagerApp
 
           }
      }
+=======
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+    }
+>>>>>>> origin/master
 }

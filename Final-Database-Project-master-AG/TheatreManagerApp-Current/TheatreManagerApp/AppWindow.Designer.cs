@@ -266,7 +266,7 @@ namespace TheatreManagerApp
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton2.Text = "toolStripButton1";
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton1_Click);
+
             // 
             // Menu_toolstrip
             // 
@@ -294,8 +294,7 @@ namespace TheatreManagerApp
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
+
             // Menu_panel
             // 
             this.Menu_panel.Controls.Add(this.Menu_toolstrip);
@@ -335,8 +334,7 @@ namespace TheatreManagerApp
             this.label10.Size = new System.Drawing.Size(147, 37);
             this.label10.TabIndex = 13;
             this.label10.Text = "Calendar";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
+
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;

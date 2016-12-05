@@ -32,5 +32,15 @@ namespace TheatreManagerApp.Properties {
                 return ((string)(this["Setting"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CS1;Initial Catalog=TheaterDB;Integrated Security=True")]
+        public string TheaterDBConnectionString {
+            get {
+                return ((string)(this["TheaterDBConnectionString"]));
+            }
+        }
     }
 }

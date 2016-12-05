@@ -55,10 +55,13 @@ namespace TheatreManagerApp
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.Menu_panel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.Price_panel.SuspendLayout();
             this.Inventory_panel.SuspendLayout();
             this.Menu_toolstrip2.SuspendLayout();
@@ -303,7 +306,10 @@ namespace TheatreManagerApp
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.monthCalendar1);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Location = new System.Drawing.Point(360, 0);
@@ -311,17 +317,10 @@ namespace TheatreManagerApp
             this.panel1.Size = new System.Drawing.Size(360, 676);
             this.panel1.TabIndex = 2;
             // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(23, 45);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 15;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 234);
+            this.dataGridView1.Location = new System.Drawing.Point(27, 89);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(312, 397);
@@ -337,6 +336,40 @@ namespace TheatreManagerApp
             this.label10.TabIndex = 13;
             this.label10.Text = "Calendar";
             this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(128, 60);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(95, 20);
+            this.dateTimePicker1.TabIndex = 15;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(27, 60);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(95, 20);
+            this.dateTimePicker2.TabIndex = 16;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(125, 42);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(52, 13);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "End Date";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(24, 44);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 13);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "Start Date";
             // 
             // AppWindow
             // 
@@ -389,7 +422,10 @@ namespace TheatreManagerApp
         private Label label10;
         private DataGridView dataGridView1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private MonthCalendar monthCalendar1;
+        private Label label12;
+        private Label label11;
+        private DateTimePicker dateTimePicker2;
+        private DateTimePicker dateTimePicker1;
     }
     #endregion
 }

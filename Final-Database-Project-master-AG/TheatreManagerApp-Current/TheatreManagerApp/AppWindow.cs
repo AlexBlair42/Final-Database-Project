@@ -28,29 +28,6 @@ namespace TheatreManagerApp
         }
         private void LoadLeftPanel()
         {
-            string kids_price, adult_price, SS_price, matinee_price;
-            try
-            {
-                OleDbConnection connection = Utility.GetOleDBConnection();
-                connection.Open();
-                string Query = Utility.QuerySelect(0);
-                OleDbCommand cmd = new OleDbCommand(Query, connection);
-                OleDbDataReader rdr = cmd.ExecuteReader();
-
-
-                bool success = rdr.Read();
-                if (success)
-                {
-                    label6.Text = rdr.GetValue(1).ToString();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Oops, error: " + ex.Message + ex.StackTrace);
-            }
-            
-            
-
             
         }
 
